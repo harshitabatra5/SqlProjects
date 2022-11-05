@@ -1,3 +1,10 @@
+
+/* you can get these two datasets from the following links
+[dataset 1](https://docs.google.com/spreadsheets/d/1ML9R2hVbFj3FSGSZ6_eoDV6TSqsH6hEv/edit?usp=sharing&ouid=116155490114219473709&rtpof=true&sd=true)
+[dataset 2](https://docs.google.com/spreadsheets/d/1IWpzYcYGGmho7IZgriPMdkB620AAhxj_/edit?usp=sharing&ouid=116155490114219473709&rtpof=true&sd=true)
+*/
+
+
 select * from project.dbo.data1;
 select * from project.dbo.data2;
 
@@ -110,9 +117,6 @@ select a.district,a.state,a.growth g,b.population p from project..data1 a inner 
 on a.district=b.district) c ;
 
 -- population vs area
--- select '1' as ,kp.* from(
-
-
 select (finally.totalarea/finally.previous_census) as pcp_vs_area,(finally.totalarea/finally.new_census) as ncp_vs_area from 
 (
 select final.* from 
