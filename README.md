@@ -1,2 +1,2 @@
 # SqlProjects
-## All the sql scripts are wriiten on sql server.
+## All the sql scripts are written on sql server.
